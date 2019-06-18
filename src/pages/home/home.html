@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Globe weather</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="home">
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <input type="search" name="city" [(ngModel)]="city" (keyup)="getWeathers(city)" id="search" placeholder="Search by Location" style="text-align: center">
+        <h2 class="location">{{cityName}}</h2>
+        <h4 class="location">{{regionName}} [{{countryName}}]</h4>
+        <div class="icon"><img src=" {{icon}} " alt=""></div>
+        <h3 class="desc">{{text}}</h3>
+        <h1 class="temp">{{temp}} &deg;</h1>
+        <h6 style="text-align: center">{{time}}</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row">
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <strong>Cloud: </strong>{{clouds}}
+          </ion-item>
+          <ion-item>
+            <strong>Humidity: </strong>{{humid}}
+          </ion-item>
+          <ion-item>
+            <strong>Temperature: </strong>{{temp}} &deg; C
+          </ion-item>
+          <ion-item>
+            <strong>Wind Direction: </strong>{{wind}}
+          </ion-item>
+          <ion-item>
+            <strong>Wind Speed: </strong>{{windSpeed}} kph
+          </ion-item>
+          <ion-item>
+            <strong>Last Updated: </strong> {{update}}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

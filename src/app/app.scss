@@ -1,0 +1,33 @@
+
+#home {
+    background-image: url('../assets/imgs/a4zNlo26.jpg');
+    color: color($colors, light);
+    background-size: cover;
+    margin-top: 30px;
+}
+.toolbar-title {
+    text-align: center;
+}
+.tabs-md .tab-button-icon {
+    color: #56EEF4;
+}
+.temp {
+    text-align: center;
+    font-weight: normal;
+}
+.location, .icon, .desc {
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+}
+.location {
+    font-size: 30px;
+}
+.desc {
+    font-size: 30px;
+}
+.row {
+
+}
